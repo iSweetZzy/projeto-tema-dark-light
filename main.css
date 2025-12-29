@@ -1,0 +1,55 @@
+body{
+    font-family: monospace;
+}
+ul {
+    font-family: Arial, Helvetica, sans-serif;
+}
+li{
+    list-style: circle;
+}
+.list{
+    list-style: square;
+}
+
+:root {
+    --green: #00FF00;
+    --white: #ffffff;
+    --black: #000000;
+}
+
+.light-theme {
+    --bg: var(--white); /* Mudei para branco para o modo claro */
+    --fontColor: var(--black);
+    --bntBg: var(--black);
+    --bntFontColor: var(--white);
+}
+
+.dark-theme {
+    --bg: var(--black);
+    --fontColor: var(--green);
+    --bntBg: var(--white);
+    --bntFontColor: var(--black);
+}
+
+body {
+    font-family: monospace;
+    /* Aqui está o segredo: aplicar as variáveis */
+    background-color: var(--bg);
+    color: var(--fontColor);
+    transition: 0.3s; /* Para ficar suave */
+}
+
+.bnt {
+    color: var(--bntFontColor);
+    background-color: var(--bntBg);
+    position: absolute;
+    top: 20px;
+    left: 250px;
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    border: none;
+    cursor: pointer; /* Adicionei para parecer um botão */
+}
+
+.bnt:focus { outline: none; }
