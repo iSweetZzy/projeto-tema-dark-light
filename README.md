@@ -8,4 +8,4 @@ Este é um projeto simples desenvolvido para praticar a manipulação do DOM com
 - JavaScript
 
 # Link para testar o site:
-[Coloque aqui o link que você gerou no Passo 3]
+https://isweetzzy.github.io/projeto-tema-dark-light/
